@@ -1,0 +1,26 @@
+﻿@page "/create-a-page"
+@attribute [Page]
+@attribute [PageMetadata(Title = "Create a Page")]
+@inherits PageMetadataBase
+
+<PageTitle>@Localizer["Create a Page"]</PageTitle>
+
+@* Description *@
+<p>@Localizer["Follow this tip and create a Page in Blazor!"]</p>
+
+@* Source Code *@
+<pre>@SourceCode</pre>
+
+@* Example *@
+<div class="example">
+    This page!
+</div>
+
+@code {
+    public string SourceCode = @"@page ""/create-a-page""
+
+<PageTitle>Create a Page</PageTitle>
+
+<p>Follow this tip and create a Page in Blazor!</p>
+";
+}

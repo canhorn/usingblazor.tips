@@ -1,0 +1,21 @@
+﻿@page "/create-a-component"
+@attribute [Page]
+@attribute [PageMetadata(Title = "Create a Component")]
+@inherits PageMetadataBase
+
+<PageTitle>@Localizer["Create a Component"]</PageTitle>
+
+@* Description *@
+<p>@Localizer["Follow this tip and create a component in Blazor!"]</p>
+
+@* Source Code *@
+<pre>@SourceCode</pre>
+
+@* Example *@
+<div class="example">
+    <CreateAComponentExample />
+</div>
+
+@code {
+    public string SourceCode = @"<p>Put your content in here!</p>";
+}
