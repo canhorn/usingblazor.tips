@@ -1,10 +1,12 @@
-# EventHorizon Platform Docs
+# Using Blazor Tips Website
 
 # About 
 
-This project is built on Blazor, with a focus on quick page creation. 
+This is a website that has a collection of Blazor tips. Each tips comes with details, Source Code, and a example if doable.
 
-# Features
+This project is built on Blazor Wasm, when the application is published it will generate html files for each marked page. This is a merger of a Static Site Generator, the files the get generated are self contained Blazor Wasm application. But after the first request the page starts functioning like a Single Page Application, in that it does not do a full page request when navigating in the application. The framework that this generation is built on could be changed to support full static generation, but the added benefit of being able to write C# to add features is where the Blazor Wasm shines.
+
+# Site Generation Features
 
 - Sidebar that will auto update based on razor mnnotated with the [PageAttribute] Attribute.
 - Static Site Generation for Blazor Wasm
